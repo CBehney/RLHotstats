@@ -8,11 +8,11 @@ if (Test-Path $script:dbPath) { $script:isFirstTime = $true }
 
 #* THIS IS CURRENTLY WORKING FOR RAW LOG DUMPS
 
-#TODO - Move listener to seperate script
+#TODO - Move listener to seperate script 
 #TODO - Delimit json objects from raw dumps
 #TODO   - Convert to PSCustomObejcts for dot notation prop access
 #TODO   - Verify and insert into SQLite DB (CSV too much overhead)
-#TODO - Verify more buffer invalid-char & overflow exceptioms (unlikely -> static/simple api) 
+#TODO - Verify more buffer invalid-char & overflow exceptioms (unlikely -> static api) 
 
 function Show-Menu {
     do {
